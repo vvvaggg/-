@@ -1,11 +1,13 @@
 class Employee: # родительский класс
  
     def __init__(self, name):
-        self.__name = name # для Employee НЕ доступны закрытые атрибуты типа __name
+     '''для Employee НЕ доступны закрытые атрибуты типа __name'''
+        self.__name = name 
  
     @property
     def name(self):
-        return self.__name # обратиться к приватному атрибуту self.__name
+     """обратиться к приватному атрибуту self.__name"""
+        return self.__name 
  
     def work(self):
         print(f"{self.name} работает")
@@ -14,11 +16,13 @@ class Employee: # родительский класс
 class Student: # родительский класс
  
     def __init__(self, name):
-        self.__name = name # для Employee НЕ доступны закрытые атрибуты типа __name
+     """для Employee НЕ доступны закрытые атрибуты типа __name"""
+        self.__name = name 
  
     @property
     def name(self):
-        return self.__name # обратиться к приватному атрибуту self.__name
+     """обратиться к приватному атрибуту self.__name"""
+        return self.__name 
  
     def study(self):
         print(f"{self.name} учится")
